@@ -2,6 +2,10 @@
 
 A **cost-optimized server log archival system** that automatically collects logs from **EC2 through Amazon CloudWatch Logs**, processes them using **AWS Lambda**, compresses them with **Gzip**, and archives them to **Amazon S3 every 24 hours**.
 
+## 🏗️ Architecture
+
+![Architecture](https://github.com/ChandraShekharSaini/aws-event-driven-deployment/blob/e4070955dd860654d2d1a71460b725b321ba5b80/images/cloud-log-vault.png)
+
 ## 🚀 Project Overview
 
 In this project, application/server logs generated on an **EC2 instance** are sent to **Amazon CloudWatch Logs** for monitoring.
@@ -19,9 +23,7 @@ The Lambda function:
 
 This approach helps **optimize logging costs** by using S3 for long-term log retention while keeping CloudWatch primarily for monitoring and recent log analysis.
 
-## 🏗️ Architecture
 
-![Architecture](https://github.com/ChandraShekharSaini/aws-event-driven-deployment/blob/e4070955dd860654d2d1a71460b725b321ba5b80/images/cloud-log-vault.png)
 
 ## 💰 Cost Optimization
 
