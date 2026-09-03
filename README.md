@@ -21,7 +21,7 @@ This approach helps **optimize logging costs** by using S3 for long-term log ret
 
 ## 🏗️ Architecture
 
-![Architecture](https://drive.google.com/file/d/1q_XrW2_RBajCQi5OBmGXRMG6DV_Ohb-r/view?usp=sharing)
+![Architecture](https://github.com/ChandraShekharSaini/aws-event-driven-deployment/blob/e4070955dd860654d2d1a71460b725b321ba5b80/images/cloud-log-vault.png)
 
 ## 💰 Cost Optimization
 
