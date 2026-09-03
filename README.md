@@ -21,35 +21,7 @@ This approach helps **optimize logging costs** by using S3 for long-term log ret
 
 ## 🏗️ Architecture
 
-```text
-              EC2 Instance
-                   │
-                   │ Application Logs
-                   ▼
-          ┌──────────────────┐
-          │ CloudWatch Logs  │
-          │  LOG-FROM-EC2    │
-          └────────┬─────────┘
-                   │
-             Every 24 Hours
-                   │
-                   ▼
-          ┌──────────────────┐
-          │   AWS Lambda     │
-          │    Python/Boto3  │
-          └────────┬─────────┘
-                   │
-          ┌────────┴─────────┐
-          │                  │
-       Get Logs          Gzip Compress
-          │                  │
-          └────────┬─────────┘
-                   ▼
-          ┌──────────────────┐
-          │    Amazon S3     │
-          │  Log Archives    │
-          └──────────────────┘
-```
+![Architecture](https://drive.google.com/file/d/1q_XrW2_RBajCQi5OBmGXRMG6DV_Ohb-r/view?usp=sharing)
 
 ## 💰 Cost Optimization
 
